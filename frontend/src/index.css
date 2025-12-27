@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Railroad diagram styles */
+svg.railroad-diagram {
+  background-color: transparent;
+}
+svg.railroad-diagram path {
+  stroke-width: 2;
+  stroke: currentColor;
+  fill: none;
+}
+svg.railroad-diagram text {
+  font: 12px monospace;
+  text-anchor: middle;
+  fill: currentColor;
+}
+svg.railroad-diagram text.label {
+  text-anchor: start;
+}
+svg.railroad-diagram text.comment {
+  font: italic 10px monospace;
+}
+svg.railroad-diagram rect {
+  stroke-width: 2;
+  stroke: currentColor;
+  fill: transparent;
+}
+
