@@ -170,7 +170,7 @@ export const Chat: React.FC<ChatProps> = ({ regex }) => {
                         {msg.content
                             .replace(/<think>([\s\S]*?)<\/think>/g, '\n:::think\n$1\n:::\n')
                             // Handle unclosed think tag (e.g. during streaming)
-                            .replace(/<think>([\s\S]*?)$/g, '\n:::think\n$1\n:::\n')
+                            .replace(/<think>([\s\S]*?)$/g, '\n:::think{generating="true"}\n$1\n:::\n')
                         } 
                      </Markdown>
                   ) : (
